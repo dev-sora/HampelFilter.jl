@@ -3,9 +3,7 @@ module HampelFilter
 using LinearAlgebra
 using Statistics
 export hampel
-
-function hampel(x,k,thr=3)
-    """
+"""
     hampel(x, k, [,thr])
 
     Simple Hampel Filter for Julia lang.
@@ -28,8 +26,10 @@ function hampel(x,k,thr=3)
         3.0
         2.0
     ```
-    """
+"""
 
+function hampel(x,k,thr=3)
+    
     # Exceptions
     if length(x)==0
         throw(DomainError(x, "hampel() is not defined for zero-length vector"))
