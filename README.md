@@ -10,4 +10,4 @@
 This package is not registered in `General` registry so can be installed at the REPL with `] add https://github.com/dev-sora/HampelFilter.jl`.
 
 ## Project Status
-This pakcage is tested against Julia v1.6.
+This pakcage is tested with Julia v1.6.
